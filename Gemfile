@@ -13,6 +13,9 @@ group :production do
   gem 'rails_12factor'
 end
 
+#devise
+gem 'devise'
+
 #Use Photo Upload
 gem 'carrierwave'
 
@@ -49,3 +52,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# gem for Test
+group :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+  gem 'simplecov'
+end
